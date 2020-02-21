@@ -18,7 +18,7 @@ header{
       color: #ffffff;;
       font-size: 25px;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 400;
       display: flex;
       flex-direction: row;
       cursor: pointer;
@@ -41,18 +41,21 @@ header{
       
 
   }
-  .nav__link {
-      text-decoration: none;
-      color: #F6F6F7;
-      position: relative;
-      cursor: pointer;
+  .nav__item {
+    position: relative;
+     
            
   }
-  .nav__link:not(:nth-child(5))::before {
+  .nav-style {
+    text-decoration: none;
+    color: #F6F6F7;
+    cursor: pointer;
+  }
+  .nav__item:not(:nth-child(5))::before {
     content: "";
     position: absolute;
-    width: 2px;
-    height: 2px;
+    width: 3px;
+    height: 3px;
     background-color: #3c404f;
     border-radius: 50%;
     right: -16px;
@@ -75,3 +78,41 @@ header{
    }
 
    /* SLIDER BEGINS */
+   .slider{
+       background-color: #f06c64;
+       height: 595px;
+   }
+    .phone-1{
+        position: absolute;
+        top: 86px; left: 360px;
+    }
+    .phone-2{
+        position: absolute;
+        top: 170px; left: 610px;
+    }
+   
+    /* ARROWS */
+    .arrow-left{
+        position: absolute;
+        top: 382px;
+        left: 290px;
+        cursor: pointer;
+    }
+    .arrow-right{
+        position: absolute;
+        top: 382px;
+        right: 291px;
+        cursor: pointer;
+    }
+
+
+   .slider-bottom{
+    height: 6px;
+    background-color: #ea676b;
+   }
+
+   /* OUR SERVICES */
+   .our-services{
+    height: 495px;
+   
+   }
