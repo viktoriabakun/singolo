@@ -3,6 +3,7 @@
     width: 1020px;
     margin: 0 auto;
     font-family: "Lato", sans-serif;
+    padding: 0;
 }
 /* HEADER BEGINS */
 header{
@@ -109,10 +110,85 @@ header{
    .slider-bottom{
     height: 6px;
     background-color: #ea676b;
+    margin: 0;
+    padding: 0;
    }
 
    /* OUR SERVICES */
    .our-services{
-    height: 495px;
+    height: 496px;
+    background-color: #f2f2f2;
+    margin: 0;
+   } 
    
+   .services-container{
+    height: 206px;
+    width: 938px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 25px 10px 0px 40px;
+    text-align: justify;
+ }
+   
+
+   .services-heading{
+       font-size: 30px;
+       font-weight: 700;
+       color: #666d89;
+       width: 187px;
+       height: 23px;
+       margin: 0;
+       padding: 61px 0px 17px 40px;
+      
+   } 
+  
+   
+   .services-description{
+       display: flex;
+       font-weight: 300;
+       width: 949px;
+       height: 35px;
+       color: #767e9e;
+       font-size: 18px;
+       text-align: justify;
+       padding: 0px 10px 10px 40px;
+      
+   }
+  
+   .small-block{
+      width: 299px;
+      height: 86px;  
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+      
+       
+   }
+   .block-description{
+    width: 220px;
+    height: 52px;
+    color: #767e9e;
+    font-size: 12px;
+    font-weight: 400;  
+    line-height: 21.56px;
+   }    
+
+   
+   .block-heading{
+    width: 200px;
+    height: 17px;
+    color: #666d89;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Lato-Black", sans-serif;
+
+   }
+   .miniature {
+    overflow: hidden;
+    display: flex;
+    
    }
