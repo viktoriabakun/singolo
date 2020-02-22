@@ -138,10 +138,11 @@ header{
        font-size: 30px;
        font-weight: 700;
        color: #666d89;
-       width: 187px;
        height: 23px;
        margin: 0;
-       padding: 61px 0px 17px 40px;
+       padding: 61px 0px 13px 40px;
+       letter-spacing: -0.5px;
+       word-spacing: -4px;
       
    } 
   
@@ -149,12 +150,13 @@ header{
    .services-description{
        display: flex;
        font-weight: 300;
-       width: 949px;
+       width: 943px;
        height: 35px;
        color: #767e9e;
-       font-size: 18px;
+       font-size: 17px;
        text-align: justify;
-       padding: 0px 10px 10px 40px;
+       padding: 0px 40px 10px 41px;
+       line-height: 30px;
       
    }
   
@@ -185,8 +187,14 @@ header{
     font-size: 18px;
     font-weight: 700;
     font-family: "Lato-Black", sans-serif;
-
    }
+   .small-block.pen, .small-block.heart, .small-block.bulb {
+       margin-top: 15.5px;
+   }
+   .small-block.phone, .small-block.bubble, .small-block.star {
+       margin-top: 37px;
+   }
+   
    .miniature {
     overflow: hidden;
     display: flex;
