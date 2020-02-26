@@ -4,6 +4,7 @@ body{
 .portfolio{
     height: 864px;
     background-color: #2d303a;
+    overflow: hidden;
   
 }
 .portfolio-heading{
