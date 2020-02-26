@@ -1,6 +1,7 @@
 body{
     margin:0;
 }
+/* part one */
 .portfolio{
     height: 864px;
     background-color: #2d303a;
@@ -121,9 +122,111 @@ body{
 
 }
 .portfolio-bottom{
-width: 1020px;
-height: 6px;
-background-color: #323746;
-margin:0;
-padding:0;
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+    margin:0;
+    padding:0;
+}
+/* part two*/
+.about-us-wrapper{
+    height: 728px;
+    background-color: #f2f2f2;
+}
+.about-us-text{
+    padding: 40px 0px 10px 40px;
+}
+.about-us-heading{
+    height: 23px;
+    color: #666d89;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 17.86px;
+    margin: 0 0 24px 0;
+    padding-top: 29px;
+    word-spacing: -3px;
+    letter-spacing: -0.6px
+}
+.about-us-description{
+    width: 950px;
+    height: 47px;
+    color: #767e9e;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: -1px;
+    word-spacing: 3px
+}
+.about-person-wrapper{
+    width:300px;
+    height: 433px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: -21px;
+}
+
+.person-name{
+    max-width: 280px;
+    height: 14px;
+    color: #666d89;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 17.86px;
+    
+}
+.person-name.one{
+    margin: 5px 0 10px 39px;
+    letter-spacing: -1px;
+}
+.person-name.two, .person-name.three{
+    letter-spacing: -0.8px;
+    word-spacing: 1px;
+}
+.person-description{
+    width: 301px;
+    height: 32px;
+    color: #767e9e;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+}
+.person-description.one{
+    margin: 13px 0 0 40px;
+}
+.person-photo-1{
+    margin: 49px 20px 13px 40px;
+    width: 300px;
+    height: 300px;
+}
+.person-photo-2{
+    margin: 49px 20px 10px 0px;
+    width: 300px;
+    height: 300px;
+}
+.person-photo-3{
+    margin: 49px 40px 19px 0px;
+    width: 300px;
+    height: 300px;
+}
+.person-contacts{
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.person-contacts.one{
+    padding: 32px 4px 10px 39px;
+}
+.person-contacts.two{
+    padding: 33px 4px 10px 0px;
+}
+.person-contacts.three{
+    padding: 32px 4px 10px 0px;
+}
+.portfolio-bottom{
+    height: 6px;
+    background-color: #ffffff;
 }
