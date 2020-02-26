@@ -6,6 +6,8 @@ body{
     height: 864px;
     background-color: #2d303a;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
   
 }
 .portfolio-heading{
@@ -132,6 +134,8 @@ body{
 .about-us-wrapper{
     height: 728px;
     background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
 }
 .about-us-text{
     padding: 40px 0px 10px 40px;
@@ -226,7 +230,7 @@ body{
 .person-contacts.three{
     padding: 32px 4px 10px 0px;
 }
-.portfolio-bottom{
+.about-us-bottom{
     height: 6px;
     background-color: #ffffff;
 }
