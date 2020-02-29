@@ -45,78 +45,87 @@ body{
     color: #767e9e;
     font-size: 12px;
     font-weight: 400;
-    line-height: 20px;
-    letter-spacing: -0.1px;
+    line-height: 14px;
+    letter-spacing: 0.09px;
+    word-spacing: -2px;
     cursor: pointer;
 }
+
 .filtr-button.active {
     color: #dedede;    
-    border: 1px solid #666d89;
+    border: 1px solid #c5c5c5;
 }
 .portfolio-text-wrapper{
     padding: 61px 500px 0px 39px;
 }
 
 .portfolio-photos {
-    width: 1020px;
-    height: 595px;
+    width: 940px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    margin: 0px 40px 73px 40px;
+    justify-content: space-between;
+    margin: 19px 20px 53px 40px;
+}
+.column-1, .column-2, .column-3, .column-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 601px;
 }
 .flex-item {
     width: 220px;
     height: 187px;
-    margin:20px 0px 0px 20px;
-    padding: 0;
 }
 .flex-item-1{
     background-image: url("./assets/portfolio-1.png");
     background-position: bottom -39px right -10px;
-    margin-left:0;
+    
 }
 .flex-item-2{
     background-image: url("./assets/portfolio-2.png");
-    background-position: bottom -43px left -81px;
+    background-position: bottom -72px right -12px;
 }
 .flex-item-3{
     background-image: url("./assets/portfolio-3.png");
-    background-position: bottom 190px right -19px;
+    background-position: bottom -1px right -18px;
 }
 .flex-item-4{
     background-image: url("./assets/portfolio-4.png");
-    background-position: bottom -6px right -17px;
+    background-position: bottom -43px left -81px;
+    
 }
 .flex-item-5{
     background-image: url("./assets/portfolio-5.png");
-    background-position: bottom -72px right -12px;
-    margin-left:0;
+    background-position: bottom -2px right -22px;
+    
 }
 .flex-item-6{
     background-image: url("./assets/portfolio-6.png");
-    background-position: bottom -2px right -22px;
+    background-position: bottom 301px right -113px;
 }
 .flex-item-7{
     background-image: url("./assets/portfolio-7.png");
-    background-position: bottom 227px right -121px;
+    background-position: bottom 190px right -19px;
+    
 }
 .flex-item-8{
     background-image: url("./assets/portfolio-8.png");
-    background-position: bottom -58px right -34px;
+    background-position: bottom 227px right -121px;
+    
 }
 .flex-item-9{
-    margin-left:0;
     background-image: url("./assets/portfolio-9.png");
-    background-position: bottom -1px right -18px;
+    background-position: top 236px right -50px;
 }
 .flex-item-10{
     background-image: url("./assets/portfolio-10.png");
-    background-position: bottom 301px right -113px;
+    background-position: bottom -6px right -17px;
+    
 }
 .flex-item-11{
     background-image: url("./assets/portfolio-11.png");
-    background-position: top 236px right -50px;
+    background-position: bottom -58px right -34px;
+    
 }
 .flex-item-12{
     background-image: url("./assets/portfolio-12.png");
