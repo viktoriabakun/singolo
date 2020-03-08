@@ -38,7 +38,8 @@
     height: 47px;
     color: #f0d8d9;
     font-size: 18px;
-    font-weight: 300;
+    font-family: 'Lato-thin', sans-serif;
+    font-weight: 100px;
     line-height: 30px;
     word-spacing: 3px;
     letter-spacing: -0.8px;
@@ -51,20 +52,17 @@
     border: hidden;
     margin: 16px 5px 0px 5px;
     padding: 0;
-    
-}::-webkit-input-placeholder{color:#f48c8f;font-size: 12px;padding: 10px 15px;}
-::-moz-placeholder          {color:#f48c8f;font-size: 12px;padding: 10px 15px;}/* Firefox 19+ */
-:-moz-placeholder           {color:#f48c8f;font-size: 12px;padding: 10px 15px;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#f48c8f;font-size: 12px;padding: 10px 15px;}
+}
 
 .textarea-info{
     height: 202px;
     outline: none;
     resize: none;
 }::-webkit-input-placeholder{color:#f48c8f;font-size: 12px; font-family: "Lato", sans-serif;padding: 12px 15px;}
-::-moz-placeholder          {color:#f48c8f;font-size: 12px;font-family: "Lato", sans-serif;}/* Firefox 19+ */
-:-moz-placeholder           {color:#f48c8f;font-size: 12px;font-family: "Lato", sans-serif;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#f48c8f;font-size: 12px;font-family: "Lato", sans-serif;}
+::-moz-placeholder          {color:#f48c8f;font-size: 12px;font-family: "Lato", sans-serif; }/* Firefox 19+ */
+:-moz-placeholder           {color:#f48c8f;font-size: 12px;font-family: "Lato", sans-serif; }/* Firefox 18- */
+:-ms-input-placeholder      {color:#f48c8f;font-size: 12px;font-family: "Lato", sans-serif; padding: 12px 15px;}
+
 
 .submit {
     background-color: #f0d8d9;
@@ -148,4 +146,33 @@
     padding: 0;
     height: 6px;
     background-color: #ea676b;
+}
+
+/* FOOTER */
+footer{
+    margin:0;
+    padding:0;
+    height: 76px;
+    background-color: #2d303a;      
+}
+.footer-wrapper{
+    width: 980px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.social-media{
+    width: 152px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 23px 0 0 50px;
+
+}
+.copyright p{
+    margin:0;
+    font-size: 12px;
+    padding: 31px 0 0 42px;
+    letter-spacing: -0.1px;
+    color: #666D89;
 }
