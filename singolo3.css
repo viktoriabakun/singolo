@@ -17,6 +17,7 @@
     width: 620px;
     height: 365px;
     margin: 5px 0px 0px 35px;
+    padding: 0;
 }
 .get-a-quote-text{
     padding: 40px 40px 0px 40px;
@@ -28,8 +29,10 @@
     font-size: 30px;
     font-weight: 700;
     line-height: 17.86px;
-    letter-spacing: -1px;
+    letter-spacing: -0.9px;
+    word-spacing: -0.9px;
 }
+
 .quote-description{
     width: 939px;
     height: 47px;
@@ -47,6 +50,7 @@
     border-radius: 5px;
     border: hidden;
     margin: 16px 5px 0px 5px;
+    padding: 0;
     
 }::-webkit-input-placeholder{color:#f48c8f;font-size: 12px;padding: 10px 15px;}
 ::-moz-placeholder          {color:#f48c8f;font-size: 12px;padding: 10px 15px;}/* Firefox 19+ */
@@ -57,11 +61,15 @@
     height: 202px;
     outline: none;
     resize: none;
-}::-webkit-input-placeholder{color:#f48c8f;font-size: 12px; font-family: "Lato", sans-serif;padding: 5px 10px;}
+}::-webkit-input-placeholder{color:#f48c8f;font-size: 12px; font-family: "Lato", sans-serif;padding: 12px 15px;}
 ::-moz-placeholder          {color:#f48c8f;font-size: 12px;font-family: "Lato", sans-serif;}/* Firefox 19+ */
 :-moz-placeholder           {color:#f48c8f;font-size: 12px;font-family: "Lato", sans-serif;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#f48c8f;font-size: 12px;font-family: "Lato", sans-serif;}
 
+.submit {
+    background-color: #f0d8d9;
+    color: #d6564f;
+}
 .contact-info{
     height:187px;
     width:301px;
@@ -83,10 +91,20 @@
     color: #f0d8d9;
     font-size: 12px;
     font-weight: 400;
-    line-height: 21.56px;
-    margin: 0 0 0 40px;
+    line-height: 22px;
+    margin: 5px 0 0 25px;
 }
-
+.contact-text-p{
+    width: 299px;
+    text-align: justify;
+}
+.contact-items{
+    padding-top: 11px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-weight: 400;
+}
 .location, .tel-number, .mail{
     width: 150px;
     height: 20px;
@@ -97,10 +115,37 @@
 }
 .location-description p{
     margin: 0;
+    padding-right: 6px;
+}
+.location-icon{
+    padding-left: 2.5px;
+    padding-top: 0.5px;
 }
 .tel-number-description{
     padding: 100;
 }
-.mail-description p{
+.number-icon{
+    padding-top: 5px;
+}
+.tel-number-description a{
+    text-decoration: none;
+    color: #f0d8d9;
+    padding-right: 8px;
+}
+.mail-p{
     margin: 0;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+.mail-logo {
+    padding-top: 10px;
+}
+.tel-number{
+    width: 120px;
+}
+.get-a-quote-bottom{
+    margin: 0;
+    padding: 0;
+    height: 6px;
+    background-color: #ea676b;
 }
