@@ -92,21 +92,22 @@ header{
    .slider{
        background-color: #f06c64;
        height: 595px;
+       position: relative;
    }
     .phone-1{
         position: absolute;
-        top: 78px; left: 360px;
+        top: -17px; left: 110.5px;
     }
     .phone-2{
         position: absolute;
-        top: 165px; left: 610px;
+        top: 69px; left: 360px;
     }
    
     /* ARROWS */
     .arrow-left{
         position: absolute;
-        top: 377px;
-        left: 290px;
+        top: 280px;
+        left: 42px;
         cursor: pointer;
     }
     .ar-left:hover{
@@ -120,8 +121,8 @@ header{
     
     .arrow-right{
         position: absolute;
-        top: 377px;
-        right: 291px;
+        top: 280px;
+        right: 41px;
         cursor: pointer;
     }
 
@@ -260,6 +261,7 @@ header{
     display: flex;
     justify-content: space-between;
     margin-left: 2px;
+    margin-bottom: 8px;
 }
 .filtr-button{
     background-color: #2d303a;
@@ -432,7 +434,7 @@ header{
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-top: 0;
-    padding: 27.5px 0px 0 40px;
+    padding: 26.5px 0px 0 40px;
 }
 .about-person-1, .about-person-2, .about-person-3{
     width:300px;
@@ -653,10 +655,18 @@ header{
     color: #f0d8d9;
     padding-right: 8px;
 }
-.mail-p{
+.tel-a:hover{
+    text-decoration: underline;
+}
+.mail-a{
     margin: 0;
     padding-top: 3px;
     padding-left: 10px;
+    text-decoration: none;
+    color:#f0d8d9;
+}
+.mail-a:hover{
+    text-decoration: underline;
 }
 .mail-logo {
     padding-top: 10px;
