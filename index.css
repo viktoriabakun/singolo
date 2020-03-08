@@ -56,6 +56,12 @@ header{
     color: #F6F6F7;
     cursor: pointer;
   }
+  .nav-style:hover{
+      color: #f06c64;
+      background-color: #fcfcfc;
+      transition-duration: 0.3s;
+      text-decoration: underline;
+  }
   .nav__item:not(:nth-child(5))::before {
     content: "";
     position: absolute;
@@ -103,6 +109,15 @@ header{
         left: 290px;
         cursor: pointer;
     }
+    .ar-left:hover{
+        opacity: 0.5;
+        transition-duration: 0.3s;
+    }
+    .ar-right:hover{
+        opacity: 0.5;
+        transition-duration: 0.3s;
+    }
+    
     .arrow-right{
         position: absolute;
         top: 377px;
@@ -259,10 +274,21 @@ header{
     word-spacing: -2px;
     cursor: pointer;
 }
+.filtr-button:hover{
+    color: #2d303a;
+    background-color: rgb(233, 224, 224);
+    border: 2px solid #a8a4a4;
+    transition-duration: 0.3s;
+}
 
 .filtr-button.active {
     color: #dedede;    
     border: 1px solid #c5c5c5;
+}
+.filtr-button.active:hover{
+    color: #2d303a;
+    border: 2px solid #a8a4a4;
+    transition-duration: 0.3s;
 }
 .portfolio-text-wrapper{
     padding: 61px 500px 0px 39px;
@@ -468,6 +494,11 @@ header{
 .logo{
     height: 32px;
     width: 32px;
+    cursor: pointer;
+}
+.logo:hover{
+    opacity: 0.5;
+    transition-duration: 0.3s;
 }
   
 .about-us-bottom{
@@ -523,28 +554,42 @@ header{
     letter-spacing: -0.8px;
 }
 .input-info, .textarea-info{
-    width: 619px;
+    width: 605px;
     height: 38px;
     background-color: #d6564f;
     border-radius: 5px;
     border: hidden;
     margin: 16px 5px 0px 5px;
     padding: 0;
+    color: #f48c8f;
+    padding: 0 0 0 14px;
 }
 
+
 .textarea-info{
-    height: 202px;
+    height: 191px;
     outline: none;
     resize: none;
-}::-webkit-input-placeholder{color:#f48c8f;font-size: 12px; font-family: "Lato", sans-serif;padding: 12px 15px;}
+    padding: 11px 0 0 14px;
+}::-webkit-input-placeholder{color:#f48c8f;font-size: 12px; font-family: "Lato", sans-serif;}
+::-webkit-input             {color:#f48c8f;font-size: 12px; font-family: "Lato", sans-serif;}
 ::-moz-placeholder          {color:#f48c8f;font-size: 12px;font-family: "Lato", sans-serif; }/* Firefox 19+ */
 :-moz-placeholder           {color:#f48c8f;font-size: 12px;font-family: "Lato", sans-serif; }/* Firefox 18- */
-:-ms-input-placeholder      {color:#f48c8f;font-size: 12px;font-family: "Lato", sans-serif; padding: 12px 15px;}
+:-ms-input-placeholder      {color:#f48c8f;font-size: 12px;font-family: "Lato", sans-serif; }
 
 
 .submit {
     background-color: #f0d8d9;
     color: #d6564f;
+    cursor: pointer;
+    font-weight: 700;
+    margin-left: 13px;
+}
+.submit:hover{
+    background-color: #d6564f;
+    color: #f0d8d9;
+    font-weight: 700;
+    transition-duration: 0.3s;
 }
 .contact-info{
     height:187px;
