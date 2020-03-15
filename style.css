@@ -1,10 +1,20 @@
-
+html {
+    scroll-behavior: smooth;
+}
 .wrapper {
     width: 1020px;
     margin: 0 auto;
     font-family: "Lato", sans-serif;
     padding: 0;
+    z-index: 0;
 }
+.anchor {
+    display: block;
+    position: relative;
+    top: -79px;
+    visibility: hidden;
+}
+
 /* SINGOLO-1*/
 .our-services-wrapper{
     height: 1188px;
@@ -17,7 +27,16 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 50px;;
+    padding: 30px 50px;
+}
+.content-wrapper{
+    margin-top: 95px;
+}
+.header-container{
+    z-index: 100;
+    width: 1020px;
+    position: fixed;
+    top: 0;    
 }
   h1 {
       color: #ffffff;;
@@ -44,24 +63,24 @@ header{
       padding: 30px 0px 30px 0px;
       margin-right: -10px;
       
-
   }
   .nav__item {
     position: relative;
-     
-           
   }
   .nav-style {
     text-decoration: none;
     color: #F6F6F7;
     cursor: pointer;
   }
-  .nav-style:hover{
+  .nav-style.active {
       color: #f06c64;
-      background-color: #fcfcfc;
+  }
+  .nav-style:not(.active):hover{
+      color: #f06c64;
       transition-duration: 0.3s;
       text-decoration: underline;
   }
+  
   .nav__item:not(:nth-child(5))::before {
     content: "";
     position: absolute;
@@ -73,10 +92,7 @@ header{
     top: 7px;
 }          
     
-  .active {
-      color: #f06c64;
-  }
- 
+  
   
   nav{
     height: 89px;
@@ -276,7 +292,7 @@ header{
     word-spacing: -2px;
     cursor: pointer;
 }
-.filtr-button:hover{
+.filtr-button:not(.active):hover{
     color: #2d303a;
     background-color: rgb(233, 224, 224);
     border: 2px solid #a8a4a4;
@@ -287,11 +303,7 @@ header{
     color: #dedede;    
     border: 1px solid #c5c5c5;
 }
-.filtr-button.active:hover{
-    color: #2d303a;
-    border: 2px solid #a8a4a4;
-    transition-duration: 0.3s;
-}
+
 .portfolio-text-wrapper{
     padding: 61px 500px 0px 39px;
 }
