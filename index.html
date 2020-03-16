@@ -287,9 +287,19 @@
                     <form method="POST">
                         <input class="input-info one" type="text" placeholder="Name(Required)" required>
                         <input class="input-info two" type="email" placeholder="Email(Required)" required>
-                        <input class="input-info three" type="text" placeholder="Subject">
-                        <textarea class="textarea-info" placeholder="Describe your project in detail..."></textarea>
-                        <input class="input-info submit" type="submit" value="Submit" required>
+                        <input id="subject" class="input-info three" type="text" placeholder="Subject">
+                        <textarea id="description" class="textarea-info" placeholder="Describe your project in detail..."></textarea>
+                        <input id ="btn" class="input-info submit" type="submit" value="Submit" required>
+                        <!--modal window-->
+                        <div id="message-block" class="hidden">
+                            <div id="message">
+                                <p>Письмо отправлено!</p>
+                                <p>Тема: <span id="result"></span></p>
+                                <p>Описание: <span id="textarea"></span></p>
+                                <br>
+                                <button id="close-btn">OK</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
 
@@ -339,6 +349,7 @@
                 </div>
             </div>
         </div>
+
         <div class="get-a-quote-bottom"></div>
         <footer>
             <div class="footer-wrapper">
