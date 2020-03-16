@@ -40,13 +40,12 @@ button.addEventListener('click', () => {
     document.getElementById('result').innerHTML = subject === '' ? 'Без темы' : 'Тема: ' + subject;
     let description = document.getElementById('description').value.toString();
     document.getElementById('textarea').innerHTML = description === '' ? 'Без описания' : 'Тема: ' + description;
-    // document.getElementById('result').innerText = subject;
     
-    // document.getElementById('textarea').innerText = description;
     
 });
 
 closeButton.addEventListener('click', () => {
     document.getElementById('result').innerText = '';
     document.getElementById('message-block').classList.add('hidden');
+    document.body.style.overflow='visible';
 });
