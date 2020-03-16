@@ -6,10 +6,24 @@ MENU.addEventListener('click', (event) => {
     
 })
 
-const TABS = document.getElementById('tabs');
+const tabs = document.getElementById('tabs');
 
-TABS.addEventListener('click', (event) => {
-    TABS.querySelectorAll('button').forEach(el => el.classList.remove('active'));
+tabs.addEventListener('click', (event) => {
+    tabs.querySelectorAll('button').forEach(el => el.classList.remove('active'));
     event.target.classList.add('active');
     
+    const picsContainer = document.getElementById('pics');
+    const img = [...picsContainer.children];
+    const sorted = img.sort(() => 0.5 - Math.random());
+    const sortedImgs = sorted.map(img => img.outerHTML).join("");
+    picsContainer.innerHTML = sortedImgs;
+    })
+
+const PICS = document.getElementById('pics');
+
+PICS.addEventListener('click', (event) => {
+    PICS.querySelectorAll('.flex-item').forEach(el => el.classList.remove('active'));
+    event.target.classList.add('active');
 })
+
+

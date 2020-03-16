@@ -314,8 +314,8 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 19px 20px 53px 40px;
-    
 }
+
 .column-1, .column-2, .column-3, .column-4{
     display: flex;
     flex-direction: column;
@@ -336,14 +336,23 @@ header{
 .column-1:nth-child(n+5){
     display:none;
 }
+.flex-item.active{
+    border: #F06C64 solid 5px;
+    width: 215px;
+    height: 187px;
+    cursor: pointer;
+}
+.flex-item:not(.active){
+    width: 220px;
+    height: 187px;
+    cursor: pointer;
+}
+
 .flex-item:nth-child(n+4){
     display:none;
 }
 
-.flex-item{
-    width: 220px;
-    height: 187px;
-}
+
 .flex-item-1{
     background-image: url("./assets/portfolio-1.png");
     background-position: bottom -39px right -10px;
