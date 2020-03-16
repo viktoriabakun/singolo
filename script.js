@@ -28,7 +28,6 @@ PICS.addEventListener('click', (event) => {
 });
 
 // get a quote. модалочка
-
 const button = document.getElementById('btn');
 const closeButton = document.getElementById('close-btn');
 
@@ -36,13 +35,16 @@ button.addEventListener('click', () => {
     document.body.style.overflow='hidden';
     event.preventDefault();
     document.getElementById('message-block').classList.remove('hidden');
-    const subject = document.getElementById('result').value.toString();
-    document.getElementById('subject').innerText = subject;
-    const description = document.getElementById('textarea').value.toString();
-    document.getElementById('description').innerText = description;
+    
+    let subject = document.getElementById('subject').value.toString();
+    document.getElementById('result').innerHTML = subject === '' ? 'Без темы' : 'Тема: ' + subject;
+    let description = document.getElementById('description').value.toString();
+    document.getElementById('textarea').innerHTML = description === '' ? 'Без описания' : 'Тема: ' + description;
+    // document.getElementById('result').innerText = subject;
+    
+    // document.getElementById('textarea').innerText = description;
     
 });
-
 
 closeButton.addEventListener('click', () => {
     document.getElementById('result').innerText = '';
