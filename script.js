@@ -6,6 +6,30 @@ MENU.addEventListener('click', (event) => {
     event.target.classList.add('active');
 });
 
+// задать на окне отслеживание события скролл
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event) {
+    const curPos = window.scrollY;
+    const divs = document.querySelectorAll('#wrapper>div');
+    const links = document.querySelectorAll('#menu a');
+//все дивы внутри враппера.но не дивы внутри дивов
+
+    divs.forEach((el) => { 
+        if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) >= curPos) {
+            console.log('curPos: ' + curPos + 'elOffset: ' + el.offsetTop);
+            links.forEach((a) => {
+                a.classList.remove('active');          
+            if (el.getAttribute('id') === a.getAttribute('href').substring(1)){
+                a.classList.add('active');                
+             }
+        })
+    }
+});
+}
+
+
+
 // buttons in portfolio will call randomizing the pictures  ->
 const tabs = document.getElementById('tabs');
 tabs.addEventListener('click', (event) => {

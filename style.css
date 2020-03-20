@@ -1,7 +1,8 @@
 html {
     scroll-behavior: smooth;
+
 }
-.wrapper {
+#wrapper {
     width: 1020px;
     margin: 0 auto;
     font-family: "Lato", sans-serif;
@@ -16,9 +17,9 @@ html {
 }
 
 /* SINGOLO-1*/
-.our-services-wrapper{
+/* .our-services-wrapper{
     height: 1188px;
-}
+} */
 /* HEADER BEGINS */
 header{
     background-color: #2d303a;
