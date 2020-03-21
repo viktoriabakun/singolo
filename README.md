@@ -1,5 +1,5 @@
 # singolo
-Hello! That's my realisation of Singolo DOM project.
+Hello! That's my realisation of Singolo project.
 I hope you will enjoy it :)
 Good luck in checking it!
 ---
