@@ -1,3 +1,4 @@
+@import "fonts.css";
 html {
     scroll-behavior: smooth;
 }
@@ -11,7 +12,7 @@ html {
 }
 
 #home {
-    scroll-margin-top: 94px;
+    scroll-margin-top: 190px;
 }
 
 .anchor {
@@ -119,6 +120,9 @@ nav {
 /* SLIDER BEGINS */
 
 /* CAROUSEL */
+.carousel{
+    background-color: #F06C64;
+}
 
 .items-container {
     position: relative;
@@ -141,14 +145,6 @@ nav {
     position: absolute;
     top: 0;
     width: 100%;
-}
-
-.description {
-    display: flex;
-    margin: 30px 20%;
-    font-size: 32px;
-    border: 2px solid black;
-    justify-content: space-between;
 }
 
 .project-name {
@@ -468,7 +464,7 @@ body {
 }
 
 .flex-item.active {
-    border: #F06C64 solid 5px;
+    outline: 5px solid #F06C64;
     width: 215px;
     height: 187px;
     cursor: pointer;
