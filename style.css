@@ -236,13 +236,53 @@ nav {
     position: absolute;
     top: -17px;
     left: 110.5px;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .phone-2 {
     position: absolute;
     top: 69px;
     left: 360px;
+    cursor: pointer;
+    z-index: 2;
 }
+.black-screen-1.active{
+    display: block;
+    position: absolute;
+    top: 115px;
+    left: 125px;
+    cursor: pointer;
+    z-index: 7;
+}
+
+.black-screen-1{
+    display: none;
+    position: absolute;
+    top: 115px;
+    left: 125px;
+    cursor: pointer;
+}
+
+.black-screen-2.active {
+    display: block;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 112px;
+    right: 271px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.black-screen-2{
+    display: none;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 112px;
+    right: 271px;
+    cursor: pointer;
+}
+
 
 /* ARROWS */
 

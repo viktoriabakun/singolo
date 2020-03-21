@@ -79,6 +79,19 @@ document.querySelector('.control.right').addEventListener('click', function () {
     }
 });
 
+// SCREEN ACTIVATION
+const screen1 = document.getElementById('first-phone-wrapper');
+
+screen1.addEventListener('click', (event) => {
+    screen1.querySelector('.black-screen-1').classList.toggle('active');
+    console.log('click 1');
+});
+const screen2 = document.getElementById('second-phone-wrapper');
+
+screen2.addEventListener('click', (event) => {
+    screen2.querySelector('.black-screen-2').classList.toggle('active');
+    console.log('click 2');
+});
 
 //______________________ PORTFOLIO_____________________________________________
 // buttons in portfolio will call randomizing the pictures  ->
@@ -123,4 +136,4 @@ closeButton.addEventListener('click', () => {
     document.getElementById('result').innerText = '';
     document.getElementById('message-block').classList.add('hidden');
     document.body.style.overflow = 'visible';
-});
+})
