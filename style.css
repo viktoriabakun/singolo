@@ -120,7 +120,8 @@ nav {
 /* SLIDER BEGINS */
 
 /* CAROUSEL */
-.carousel{
+
+.carousel {
     background-color: #F06C64;
 }
 
@@ -172,7 +173,6 @@ nav {
 .arrow {
     display: inline-block;
     position: absolute;
-  
 }
 
 .left-arr {
@@ -181,6 +181,7 @@ nav {
     left: 21px;
     cursor: pointer;
 }
+
 .right-arr {
     position: absolute;
     top: 280px;
@@ -247,7 +248,8 @@ nav {
     cursor: pointer;
     z-index: 2;
 }
-.black-screen-1.active{
+
+.black-screen-1.active {
     display: block;
     position: absolute;
     top: 115px;
@@ -256,7 +258,7 @@ nav {
     z-index: 7;
 }
 
-.black-screen-1{
+.black-screen-1 {
     display: none;
     position: absolute;
     top: 115px;
@@ -274,7 +276,7 @@ nav {
     z-index: 3;
 }
 
-.black-screen-2{
+.black-screen-2 {
     display: none;
     transform: rotate(90deg);
     position: absolute;
@@ -283,10 +285,7 @@ nav {
     cursor: pointer;
 }
 
-
 /* ARROWS */
-
-
 
 .ar-left:hover {
     opacity: 0.5;

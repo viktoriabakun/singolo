@@ -1,3 +1,4 @@
+
 //______________________NAVIGATION LINKS____________________________________
 const MENU = document.getElementById('menu');
 
@@ -119,8 +120,9 @@ PICS.addEventListener('click', (event) => {
 //___________________________MODAL_WINDOW____________________________________
 const button = document.getElementById('btn');
 const closeButton = document.getElementById('close-btn');
+const form = document.getElementById('form');
 
-button.addEventListener('click', () => {
+form.addEventListener('submit', () => {
     document.body.style.overflow = 'hidden';
     event.preventDefault();
     document.getElementById('message-block').classList.remove('hidden');
@@ -128,12 +130,13 @@ button.addEventListener('click', () => {
     let subject = document.getElementById('subject').value.toString();
     document.getElementById('result').innerHTML = subject === '' ? 'Без темы' : 'Тема: ' + subject;
     let description = document.getElementById('description').value.toString();
-    document.getElementById('textarea').innerHTML = description === '' ? 'Без описания' : 'Тема: ' + description;
+    document.getElementById('textarea').innerHTML = description === '' ? 'Без описания' : 'Описание: ' + description;
 
 });
 
 closeButton.addEventListener('click', () => {
     document.getElementById('result').innerText = '';
     document.getElementById('message-block').classList.add('hidden');
+    form.reset();
     document.body.style.overflow = 'visible';
 })
