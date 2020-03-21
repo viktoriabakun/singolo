@@ -15,6 +15,11 @@ header{
     align-items: center;
     padding: 30px 50px;;
 }
+.header-container{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
   h1 {
       color: #ffffff;;
       font-size: 25px;
