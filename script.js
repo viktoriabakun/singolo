@@ -10,8 +10,8 @@ MENU.addEventListener('click', (event) => {
 document.addEventListener('scroll', onScroll);
 
 function onScroll(event) {
-    const curPos = window.scrollY;
-    const divs = document.querySelectorAll('#wrapper>div');
+    const curPos = window.scrollY + 95;
+    const divs = [...document.querySelectorAll('#wrapper>div')].filter(d => d.hasAttribute('id'));
     const links = document.querySelectorAll('#menu a');
 //все дивы внутри враппера.но не дивы внутри дивов
 
@@ -27,8 +27,6 @@ function onScroll(event) {
     }
 });
 }
-
-
 
 // buttons in portfolio will call randomizing the pictures  ->
 const tabs = document.getElementById('tabs');

@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-
 }
 #wrapper {
     width: 1020px;
@@ -8,6 +7,9 @@ html {
     font-family: "Lato", sans-serif;
     padding: 0;
     z-index: 0;
+}
+#home{
+    scroll-margin-top: 95px;
 }
 .anchor {
     display: block;
@@ -17,9 +19,7 @@ html {
 }
 
 /* SINGOLO-1*/
-/* .our-services-wrapper{
-    height: 1188px;
-} */
+
 /* HEADER BEGINS */
 header{
     background-color: #2d303a;
@@ -30,7 +30,7 @@ header{
     align-items: center;
     padding: 30px 50px;
 }
-.content-wrapper{
+.carousel{
     margin-top: 95px;
 }
 .header-container{
@@ -106,7 +106,7 @@ header{
    }
 
    /* SLIDER BEGINS */
-   .slider{
+   .slider-1{
        background-color: #f06c64;
        height: 595px;
        position: relative;
@@ -156,6 +156,7 @@ header{
     height: 496px;
     background-color: #f2f2f2;
     margin: 0;
+    scroll-margin-top: 95px;
    } 
    
    .services-container{
@@ -252,6 +253,7 @@ header{
     background-color: #2d303a;
     margin: 0;
     padding: 0;
+    scroll-margin-top: 95px;
 }
 .portfolio-heading{
     margin-top: 10px;
@@ -423,6 +425,7 @@ header{
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
+    scroll-margin-top: 95px;
 }
 .about-us-text{
     padding: 40px 0px 10px 40px;
@@ -537,6 +540,7 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    scroll-margin-top: 95px;
 }
 .form-contacts-wrapper{
     width: 970px;
