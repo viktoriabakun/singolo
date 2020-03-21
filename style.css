@@ -11,7 +11,7 @@ html {
 }
 
 #home {
-    scroll-margin-top: 95px;
+    scroll-margin-top: 94px;
 }
 
 .anchor {
@@ -275,7 +275,7 @@ nav {
     height: 496px;
     background-color: #f2f2f2;
     margin: 0;
-    scroll-margin-top: 95px;
+    scroll-margin-top: 94px;
 }
 
 .services-container {
@@ -373,7 +373,7 @@ body {
     background-color: #2d303a;
     margin: 0;
     padding: 0;
-    scroll-margin-top: 95px;
+    scroll-margin-top: 94px;
 }
 
 .portfolio-heading {
@@ -559,7 +559,7 @@ body {
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
-    scroll-margin-top: 95px;
+    scroll-margin-top: 94px;
 }
 
 .about-us-text {
@@ -691,7 +691,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    scroll-margin-top: 95px;
+    scroll-margin-top: 94px;
 }
 
 .form-contacts-wrapper {
