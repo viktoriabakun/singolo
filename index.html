@@ -17,17 +17,17 @@
 <body>
 
     <div class="wrapper" id="wrapper">
-    <div id="home"></div>
+        <div id="home"></div>
 
         <div class="header-container">
             <header>
                 <h1>Singolo<span class="star">*</span></h1>
                 <nav>
                     <ul class="navbar" id="menu">
-                        <li class="nav__item"><a class="nav-style active" href="#home">HOME</a>
-                        <li class="nav__item"><a class="nav-style" href="#services">SERVICES</a>
-                        <li class="nav__item"><a class="nav-style" href="#portfolio">PORTFOLIO</a>
-                        <li class="nav__item"><a class="nav-style" href="#about">ABOUT</a>
+                        <li class="nav__item"><a class="nav-style active" href="#home">HOME</a></li>
+                        <li class="nav__item"><a class="nav-style" href="#services">SERVICES</a></li>
+                        <li class="nav__item"><a class="nav-style" href="#portfolio">PORTFOLIO</a></li>
+                        <li class="nav__item"><a class="nav-style" href="#about">ABOUT</a></li>
                         <li class="nav__item"><a class="nav-style" href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
@@ -38,27 +38,33 @@
         <div>
             <!-- ANCHOR!  -->
             <div class="carousel">
+                <div class="items-container">
+                    <div class="item active">
 
-                <div class="slider-1">
+                        <img class="phone-1" src="assets/phone-1.svg" alt="phone-1">
+                        <img class="phone-2" src="assets/phone-2.svg" alt="phone-2">
 
-                    <img class="phone-1" src="assets/phone-1.svg" alt="phone-1">
-                    <img class="phone-2" src="assets/phone-2.svg" alt="phone-2">
-
-                    <div class="arrow-container">
-                        <span class="arrow-left"><img class="ar-left" src="./assets/arrow-left.svg"
-                                alt="arrow-left"></span>
-                        <span class="arrow-right"><img class="ar-right" src="./assets/arrow-right.svg"
-                                alt="arrow-right"></span>
+                    </div>
+                    <div class="item">
+                        <img class="second-slider" src="assets/blue-slider.svg" alt="second-slider">
+                    </div>
+                    <div class="control left">
+                        <div class="arrow left">
+                            <span class="left-arr"><img class="ar-left" src="./assets/arrow-left.svg"
+                                    alt="arrow-left"></span>
+                        </div>
+                    </div>
+                    <div class="control right">
+                        <div class="arrow right">
+                            <span class="right-arr"><img class="ar-right" src="./assets/arrow-right.svg"
+                                    alt="arrow-right"></span>
+                        </div>
                     </div>
                 </div>
-                <div class="slider-2">
-                    <img class="second-slider" src="assets/blue-slider.svg" alt="second-slider">
-                </div>
-
-                
-                <div class="slider-bottom"></div>
             </div>
-            
+            <div class="slider-bottom"></div>
+
+
         </div>
         <div class="our-services" id="services">
 
@@ -379,7 +385,7 @@
         <!-- </div> -->
     </div>
 
-    </div>
+
     <script src="script.js"></script>
 
 </body>
