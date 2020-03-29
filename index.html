@@ -23,7 +23,7 @@
       <div>
         <div class="carousel">
           <div class="items-container">
-            <div class="item active">
+            <div class="item item-1 active">
               <div id="first-phone-wrapper">
                 <img class="phone-1" src="assets/phone-1.svg" alt="phone-1">
                 <img class="black-screen-1 active" src="assets/black-screen.png" alt="black-screen-1">
@@ -33,8 +33,8 @@
                 <img class="black-screen-2 active" src="assets/black-screen.png" alt="black-screen-2">
               </div>
             </div>
-            <div class="item">
-              <!-- <img class="second-slider" src="assets/blue-slider.svg" alt="second-slider"> -->
+            <div class="item item-2">
+              <img class="second-slider" src="assets/blue-slider.svg" alt="second-slider">
             </div>
             <div class="control left">
               <div class="arrow left">
@@ -48,7 +48,6 @@
             </div>
           </div>
         </div>
-        <div class="slider-bottom"></div>
       </div>
       <div class="section our-services" id="services">
         <h2 class="section-title">Our Services</h2>
@@ -223,26 +222,24 @@
             cursus commodo, tortor mauris condimentum nibh.
         </p>
         <div class="form-contacts-wrapper">
-          <div class="form">
-            <form method="POST" id="form">
-              <input class="input-info one" type="text" placeholder="Name(Required)" required>
-              <input class="input-info two" type="email" placeholder="Email(Required)" required>
-              <input id="subject" class="input-info three" type="text" placeholder="Subject">
-              <textarea id="description" class="textarea-info"
-                  placeholder="Describe your project in detail..." maxlength=100></textarea>
-              <input id="btn" class="input-info submit" type="submit" value="Submit" required>
-              <!--modal window-->
-              <div id="message-block" class="hidden">
-                  <div id="message">
-                      <p>Письмо отправлено!</p>
-                      <p><span id="result"></span></p>
-                      <p><span id="textarea"></span></p>
-                      <br>
-                      <button id="close-btn">OK</button>
-                  </div>
-              </div>
-            </form>
-          </div>
+          <form class="form" method="POST" id="form">
+            <input class="input-info one" type="text" placeholder="Name(Required)" required>
+            <input class="input-info two" type="email" placeholder="Email(Required)" required>
+            <input id="subject" class="input-info three" type="text" placeholder="Subject">
+            <textarea id="description" class="textarea-info"
+                placeholder="Describe your project in detail..." maxlength=100></textarea>
+            <input id="btn" class="input-info submit" type="submit" value="Submit" required>
+            <!--modal window-->
+            <div id="message-block" class="hidden">
+                <div id="message">
+                    <p>Письмо отправлено!</p>
+                    <p><span id="result"></span></p>
+                    <p><span id="textarea"></span></p>
+                    <br>
+                    <button id="close-btn">OK</button>
+                </div>
+            </div>
+          </form>
           <div class="contact-info">
             <div class="contact-text-wrapper">
               <div class="contact-header">
@@ -288,10 +285,10 @@
         <p>&#169; Copyright 2013</p>
       </div>
       <div class="social-media">
-        <div class="social-media-item"><img class="logo" id="footer-logo" src="./assets/facebook.svg"></div>
-        <div class="social-media-item"><img class="logo" id="footer-logo" src="./assets/google.svg"></div>
-        <div class="social-media-item"><img class="logo" id="footer-logo" src="./assets/Twitter.svg"></div>
-        <div class="social-media-item"><img class="logo" id="footer-logo" src="./assets/linked-in.svg"></div>
+        <div class="social-media-item"><img class="logo footer-logo"  src="./assets/facebook.svg"></div>
+        <div class="social-media-item"><img class="logo footer-logo"  src="./assets/google.svg"></div>
+        <div class="social-media-item"><img class="logo footer-logo"  src="./assets/Twitter.svg"></div>
+        <div class="social-media-item"><img class="logo footer-logo"  src="./assets/linked-in.svg"></div>
       </div>
     </div>
   </footer>
