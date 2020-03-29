@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', serif;
+}
+
+.quote {
+    width: 1020px;
+    color: #F9D9DA;
+    background-color: #FF6C64;
+    padding: 40px 0 40px 0;
+}
+
+.quote > div, h1, p {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.quote > h1 {
+    font-size: 30px;
+}
+
+.container {
+    background-color: #FF6C64;
+    margin-top: 60px;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'Lato', serif;
+    color: #FF7F7F;
+    font-size: 12px;
+}
+
+.form {
+    float: left;
+    width: 60%;
+}
+
+.contact_information {
+    float: right;
+    width: 40%;
+}
+
+.contact_information > h1 {
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.quote > p {
+    line-height: 30px;
+}
+
+.form input, textarea {
+    background-color: #F5554E;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contact_information span {
+    font-size: 12px;
+    margin-left: 15px; 
+    margin-top: 0px;
+}
+
+.contact_information img {
+    position: relative;
+    top: 5px;
+}
+
+footer {
+    padding: 40px 0 100px 0;
+    width: 1020px;
+    clear: both;
+    background-color: #272C38;
+}
+
+.social_networks {
+    float: right;
+    margin: 20px 40px 30px 0;
+}
+
+.copyright {
+    float: left;
+    width: 40%;
+    margin-top: 30px;
+    color: #5B6580;
+}
+
+.form input:focus, .form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px #fff;
+}
+
+.social_networks > img:hover {
+    background-color: black;
+    box-shadow: 0px 0px 10px #5F6986;
+    transform: scale(1.10095);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.social_networks img {
+    border: #5F6986 1px solid;
+    border-radius: 50%;
+    margin: 0px 10px 0 0;
+    padding: 10px;
+}

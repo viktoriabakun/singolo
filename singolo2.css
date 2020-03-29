@@ -1,0 +1,127 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+body > div {
+    width: 1020px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.buttons {
+    margin-left: 40px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.portfolio {
+    padding: 40px 0 40px 0px;
+    background-color: #272C38;
+    color: #5F6986;
+}
+
+.portfolio > h1 {
+    font-size: 30px;
+    margin-left: 40px;
+    color: #5F6986;
+}
+
+.portfolio > p {
+    font-size: 18px;
+    margin-left: 40px;
+    color: #5F6986;
+}
+
+.gallery {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0px 40px 0px 30px;
+    padding-bottom: 25px;
+}
+
+.buttons {
+    margin: 0px 0 0 35px;
+}
+
+.buttons > input[type="submit"] {
+    background-color: transparent;
+    border: #5F6986 1px solid;
+    color: #626D8A;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 1px 5px 1px 5px;
+}
+
+.buttons > input[type="submit"]:hover {
+    color: white;
+    border: white 1px solid;
+}
+
+.buttons > input[type="submit"]:focus {
+    color: white;
+    border: white 1px solid;
+    outline: none;
+}
+
+.gallery > img {    
+    margin: 10px;
+}
+
+.about_us > h1 {
+    margin-left: 40px;
+}
+
+.about_us {
+    padding: 40px 0 40px 0;
+    width: 1020px;
+    color: #5F6986;
+    background-color: #F2F2F2;
+}
+
+.about_us > p {
+    margin-left: 40px;
+    width: 85%;
+    line-height: 30px;
+}
+
+.team p {
+    font-size: 12px;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0 0 40px;
+}
+
+.social_networks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.social_networks > img {
+    border: #5F6986 1px solid;
+    border-radius: 50%;
+    margin: 10px 10px 0 0;
+    padding: 10px;
+}
+
+.social_networks > img:hover {
+    background-color: black;
+    box-shadow: 0px 0px 10px #5F6986;
+    transform: scale(1.10095);
+    transition: 0.7s;
+    cursor: pointer;
+}
