@@ -858,6 +858,26 @@ footer {
         transition-duration: 0.3s;
         text-decoration: underline;
     }
+    .phone-1{
+        top: -16px;
+    }
+    .black-screen-1.active{
+        top: 115px;
+    }
+    .phone-2{
+        left: 360px;
+    }
+    .black-screen-2.active{
+        left: 554px;
+    }
+    .control.left{
+        top: 47.5%;
+        left: 22px;
+    }
+    .control.right{
+        top: 47.5%;
+        right: 15px;
+    }
 }
 
 @media (max-width: 1019px) {
