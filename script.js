@@ -1,18 +1,32 @@
 
-//______________________NAVIGATION LINKS____________________________________
-const MENU = document.getElementById('menu');
+// //______________________NAVIGATION LINKS____________________________________
+const MENU = document.querySelector('.navbar');
 
 MENU.addEventListener('click', (event) => {
-    MENU.querySelectorAll('.nav-style').forEach(el => el.classList.remove('active'));
-    // event.target.classList.add('active');
+    if(event.target.classList.contains('nav-style') && window.innerWidth < 768) {
+        toggleBurger();
+    }
 });
 
+//_______________________BURGER_MENU____________________________________________
+const burgerButton = document.querySelector('.burger-button');
+burgerButton.addEventListener('click', (event) =>{
+    toggleBurger();
+});
+
+function toggleBurger() {
+    burgerButton.classList.toggle('rotated');
+    document.querySelector('.shadowed-cover').classList.toggle('active');
+    document.querySelector('.navbar').classList.toggle('active');
+    document.querySelector('.heading').classList.toggle('heading-menu');
+}
 
 //______________________SCROLL_________________________________________________
 document.addEventListener('scroll', onScroll);
 
 function onScroll(event) {
-    const curPos = window.scrollY + 95;
+    const headerH = parseFloat(document.querySelector('header').offsetHeight);
+    const curPos = window.scrollY + headerH;
     const divs = [...document.querySelectorAll('#wrapper>div')].filter(d => d.hasAttribute('id'));
     const links = document.querySelectorAll('#menu a');
 
