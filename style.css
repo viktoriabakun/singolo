@@ -930,7 +930,7 @@ footer {
         height: 71px;
     }
 
-    .items-container>* {
+    .items-container>*:not(.item-2) {
         transform: scale(0.35);
     }
 
