@@ -4,3 +4,4 @@ I hope you will enjoy it :)
 Good luck in checking it!
 ---
 You can contact me in Telegram: @Vusen.
+https://viktoriabakun.github.io/singolo/
